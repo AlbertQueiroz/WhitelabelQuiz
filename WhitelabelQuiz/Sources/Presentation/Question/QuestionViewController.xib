@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="WhitelabelQuiz" customModuleProvider="target">
+            <connections>
+                <outlet property="answerFourButton" destination="5xM-ET-AfZ" id="xH2-vm-Z4e"/>
+                <outlet property="answerOneButton" destination="PIH-V0-S07" id="AO4-DF-YAZ"/>
+                <outlet property="answerThreeButton" destination="KWJ-kC-yhY" id="sLu-jz-QV4"/>
+                <outlet property="answerTwoButton" destination="yQp-IV-cF0" id="veI-Hx-H86"/>
+                <outlet property="closeButton" destination="vQh-6c-57v" id="Q3k-Co-MLF"/>
+                <outlet property="questionLabel" destination="Tti-IW-Dze" id="toF-Pz-c1S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="GoT-Js-2FY">
+                    <rect key="frame" x="24" y="342" width="366" height="488"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIH-V0-S07">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="104"/>
+                            <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-IV-cF0">
+                            <rect key="frame" x="0.0" y="128" width="366" height="104"/>
+                            <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWJ-kC-yhY">
+                            <rect key="frame" x="0.0" y="256" width="366" height="104"/>
+                            <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xM-ET-AfZ">
+                            <rect key="frame" x="0.0" y="384" width="366" height="104"/>
+                            <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-6c-57v">
+                    <rect key="frame" x="16" y="60" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="12D-JW-LfW"/>
+                        <constraint firstAttribute="width" constant="42" id="BGs-rS-VYT"/>
+                    </constraints>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="jXq-d0-Z4X"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tti-IW-Dze">
+                    <rect key="frame" x="24" y="118" width="366" height="200"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="LKQ-MK-Kqz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GoT-Js-2FY" secondAttribute="bottom" constant="32" id="02I-g4-hCQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GoT-Js-2FY" secondAttribute="trailing" constant="24" id="5wZ-F5-mJP"/>
+                <constraint firstItem="vQh-6c-57v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7fn-rP-AVz"/>
+                <constraint firstItem="Tti-IW-Dze" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="MXY-lB-9XD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tti-IW-Dze" secondAttribute="trailing" constant="24" id="OqV-75-puM"/>
+                <constraint firstItem="vQh-6c-57v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="iT1-ID-lqj"/>
+                <constraint firstItem="Tti-IW-Dze" firstAttribute="top" secondItem="vQh-6c-57v" secondAttribute="bottom" constant="16" id="ttJ-qm-Vx6"/>
+                <constraint firstItem="GoT-Js-2FY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="wh6-Zt-T8c"/>
+                <constraint firstItem="GoT-Js-2FY" firstAttribute="top" secondItem="Tti-IW-Dze" secondAttribute="bottom" constant="24" id="zpq-Uf-ZJU"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
