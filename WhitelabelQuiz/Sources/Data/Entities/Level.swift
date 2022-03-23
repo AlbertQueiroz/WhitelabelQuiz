@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Level {
+struct Level: Codable {
     let number: Int
     let questions: [Question]
 }

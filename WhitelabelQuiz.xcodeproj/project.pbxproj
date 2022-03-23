@@ -21,6 +21,8 @@
 		509250D627AF77F5006DEDA4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509250D527AF77F5006DEDA4 /* Question.swift */; };
 		509250D827AF78C3006DEDA4 /* LevelsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509250D727AF78C3006DEDA4 /* LevelsRepository.swift */; };
 		509250DA27AF791E006DEDA4 /* GetLevelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509250D927AF791E006DEDA4 /* GetLevelsUseCase.swift */; };
+		50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBC16A27EA8D680029B49B /* LevelsService.swift */; };
+		50EBC16D27EA920C0029B49B /* levels.json in Resources */ = {isa = PBXBuildFile; fileRef = 50EBC16927EA8A500029B49B /* levels.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		509250D527AF77F5006DEDA4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		509250D727AF78C3006DEDA4 /* LevelsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsRepository.swift; sourceTree = "<group>"; };
 		509250D927AF791E006DEDA4 /* GetLevelsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLevelsUseCase.swift; sourceTree = "<group>"; };
+		50EBC16927EA8A500029B49B /* levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = levels.json; sourceTree = "<group>"; };
+		50EBC16A27EA8D680029B49B /* LevelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		5092507D27A36DA7006DEDA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50EBC16927EA8A500029B49B /* levels.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			children = (
 				509250CC27AF6FB2006DEDA4 /* Entities */,
 				509250D727AF78C3006DEDA4 /* LevelsRepository.swift */,
+				50EBC16A27EA8D680029B49B /* LevelsService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EBC16D27EA920C0029B49B /* levels.json in Resources */,
 				5092505927A36B5A006DEDA4 /* LaunchScreen.storyboard in Resources */,
 				5092505627A36B5A006DEDA4 /* Assets.xcassets in Resources */,
 				509250D427AF723C006DEDA4 /* QuestionViewController.xib in Resources */,
@@ -354,6 +361,7 @@
 				5092504A27A36B57006DEDA4 /* AppDelegate.swift in Sources */,
 				5092504C27A36B57006DEDA4 /* SceneDelegate.swift in Sources */,
 				509250D327AF723C006DEDA4 /* QuestionViewController.swift in Sources */,
+				50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */,
 				509250CE27AF6FBF006DEDA4 /* Level.swift in Sources */,
 				509250D627AF77F5006DEDA4 /* Question.swift in Sources */,
 				5092508127AF2A99006DEDA4 /* LevelListViewController.swift in Sources */,

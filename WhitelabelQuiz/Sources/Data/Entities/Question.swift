@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Question {
+struct Question: Codable {
     let question: String
+    let answerIndex: Int
     let answers: [String]
 }
