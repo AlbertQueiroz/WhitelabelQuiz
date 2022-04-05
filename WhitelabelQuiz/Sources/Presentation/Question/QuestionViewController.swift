@@ -40,26 +40,35 @@ final class QuestionViewController: UIViewController {
 
     }
 
-    private func hideNavBar() {
-        navigationController?.navigationBar.isHidden = true
-    }
-
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
     }
 
-    private func rightAnswer() {
-        nextQuestion()
-    }
-
-    private func wrongAnswer() {
-        print("Wrong Answer")
+    private func didAnswer() {
+        let thereIsNextQuestion = currentQuestion + 1 < level.questions.count
+        if thereIsNextQuestion {
+            nextQuestion()
+        } else {
+            levelComplete()
+        }
     }
 
     private func nextQuestion() {
         currentQuestion += 1
         tableView.reloadData()
+    }
+
+    private func levelComplete() {
+        let alert = UIAlertController(title: "Level Complete", message: "Congratulations, you have completed this level", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
+            self.navigationController?.popViewController(animated: false)
+        })
+        present(alert, animated: true, completion: nil)
+    }
+
+    private func hideNavBar() {
+        navigationController?.navigationBar.isHidden = true
     }
 
     @IBAction func close(_ sender: Any) {
@@ -73,14 +82,7 @@ extension QuestionViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        case 1:
-            return answers.count
-        default:
-            return 0
-        }
+        section == 0 ? 1 : answers.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -90,6 +92,7 @@ extension QuestionViewController: UITableViewDataSource {
         case 0:
             cell.textLabel?.text = question.question
             cell.textLabel?.textAlignment = .center
+            cell.isUserInteractionEnabled = false
         case 1:
             cell.textLabel?.text = answers[indexPath.row]
         default:
@@ -101,14 +104,7 @@ extension QuestionViewController: UITableViewDataSource {
 
 extension QuestionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.section {
-        case 0:
-            return 200
-        case 1:
-            return 60
-        default:
-            return 0
-        }
+        indexPath.section == 0 ? 200 : 60
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -117,13 +113,16 @@ extension QuestionViewController: UITableViewDelegate {
         let cell = tableView.cellForRow(at: indexPath)
 
         let correctAnswer = indexPath.row == question.answerIndex
+        let correctAnswerCell = tableView.cellForRow(at: IndexPath(row: question.answerIndex, section: 1))
 
-        if correctAnswer {
-            rightAnswer()
-            cell?.backgroundColor = .green
-        } else {
-            wrongAnswer()
+        correctAnswerCell?.backgroundColor = .green
+
+        if !correctAnswer {
             cell?.backgroundColor = .red
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.didAnswer()
         }
 
         tableView.deselectRow(at: indexPath, animated: true)
