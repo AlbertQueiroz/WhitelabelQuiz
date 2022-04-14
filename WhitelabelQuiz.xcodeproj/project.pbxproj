@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,9 @@
 		50A1D51C27EBF4C5007F0D95 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A1D51A27EBF4C5007F0D95 /* MainMenuViewController.xib */; };
 		50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBC16A27EA8D680029B49B /* LevelsService.swift */; };
 		50EBC16D27EA920C0029B49B /* levels.json in Resources */ = {isa = PBXBuildFile; fileRef = 50EBC16927EA8A500029B49B /* levels.json */; };
+		95750A572807AE4A00CA714D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A562807AE4A00CA714D /* FirebaseRemoteConfig */; };
+		95750A592807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */; };
+		95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 		50A1D51A27EBF4C5007F0D95 /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		50EBC16927EA8A500029B49B /* levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = levels.json; sourceTree = "<group>"; };
 		50EBC16A27EA8D680029B49B /* LevelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsService.swift; sourceTree = "<group>"; };
+		95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95750A572807AE4A00CA714D /* FirebaseRemoteConfig in Frameworks */,
+				95750A592807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +127,6 @@
 			children = (
 				5092507C27A36D9F006DEDA4 /* Sources */,
 				5092507D27A36DA7006DEDA4 /* Resources */,
-				5092505527A36B5A006DEDA4 /* Assets.xcassets */,
-				5092505727A36B5A006DEDA4 /* LaunchScreen.storyboard */,
-				5092505A27A36B5A006DEDA4 /* Info.plist */,
 				5092505227A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld */,
 			);
 			path = WhitelabelQuiz;
@@ -161,6 +164,10 @@
 		5092507D27A36DA7006DEDA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */,
+				5092505A27A36B5A006DEDA4 /* Info.plist */,
+				5092505727A36B5A006DEDA4 /* LaunchScreen.storyboard */,
+				5092505527A36B5A006DEDA4 /* Assets.xcassets */,
 				50EBC16927EA8A500029B49B /* levels.json */,
 			);
 			path = Resources;
@@ -254,6 +261,10 @@
 			dependencies = (
 			);
 			name = WhitelabelQuiz;
+			packageProductDependencies = (
+				95750A562807AE4A00CA714D /* FirebaseRemoteConfig */,
+				95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */,
+			);
 			productName = WhitelabelQuiz;
 			productReference = 5092504627A36B57006DEDA4 /* WhitelabelQuiz.app */;
 			productType = "com.apple.product-type.application";
@@ -325,6 +336,9 @@
 				Base,
 			);
 			mainGroup = 5092503D27A36B57006DEDA4;
+			packageReferences = (
+				95750A552807AE4A00CA714D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5092504727A36B57006DEDA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +360,7 @@
 				5092505627A36B5A006DEDA4 /* Assets.xcassets in Resources */,
 				50A1D51C27EBF4C5007F0D95 /* MainMenuViewController.xib in Resources */,
 				509250D427AF723C006DEDA4 /* QuestionViewController.xib in Resources */,
+				95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVQMR29BJU;
-				INFOPLIST_FILE = WhitelabelQuiz/Info.plist;
+				INFOPLIST_FILE = WhitelabelQuiz/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +584,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AVQMR29BJU;
-				INFOPLIST_FILE = WhitelabelQuiz/Info.plist;
+				INFOPLIST_FILE = WhitelabelQuiz/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -705,6 +720,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95750A552807AE4A00CA714D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95750A562807AE4A00CA714D /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95750A552807AE4A00CA714D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95750A552807AE4A00CA714D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseRemoteConfigSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5092505227A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld */ = {
