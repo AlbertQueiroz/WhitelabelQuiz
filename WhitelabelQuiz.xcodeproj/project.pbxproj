@@ -28,6 +28,7 @@
 		95750A572807AE4A00CA714D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A562807AE4A00CA714D /* FirebaseRemoteConfig */; };
 		95750A592807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */; };
 		95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */; };
+		95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,12 @@
 		50EBC16927EA8A500029B49B /* levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = levels.json; sourceTree = "<group>"; };
 		50EBC16A27EA8D680029B49B /* LevelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsService.swift; sourceTree = "<group>"; };
 		95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95B3FEA1280E2BDD001D6EFE /* relogio.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = relogio.ogg; sourceTree = "<group>"; };
+		95B3FEA2280E2BDD001D6EFE /* 10-segundos.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-segundos.ogg"; sourceTree = "<group>"; };
+		95B3FEA3280E2BDE001D6EFE /* audio-fundo.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "audio-fundo.ogg"; sourceTree = "<group>"; };
+		95B3FEA4280E2BDE001D6EFE /* click.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.ogg; sourceTree = "<group>"; };
+		95B3FEA5280E2BDE001D6EFE /* moedas.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = moedas.ogg; sourceTree = "<group>"; };
+		95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +163,7 @@
 				509250CA27AF4ACC006DEDA4 /* Data */,
 				509250CB27AF4AD0006DEDA4 /* Domain */,
 				509250CF27AF71CF006DEDA4 /* Presentation */,
+				95B3FEA6280E3631001D6EFE /* Util */,
 				5092507E27AF2A5F006DEDA4 /* Config */,
 			);
 			path = Sources;
@@ -164,6 +172,7 @@
 		5092507D27A36DA7006DEDA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				95B3FEA0280E2BD1001D6EFE /* Sound */,
 				95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */,
 				5092505A27A36B5A006DEDA4 /* Info.plist */,
 				5092505727A36B5A006DEDA4 /* LaunchScreen.storyboard */,
@@ -243,6 +252,26 @@
 				50A1D51A27EBF4C5007F0D95 /* MainMenuViewController.xib */,
 			);
 			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		95B3FEA0280E2BD1001D6EFE /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				95B3FEA2280E2BDD001D6EFE /* 10-segundos.ogg */,
+				95B3FEA3280E2BDE001D6EFE /* audio-fundo.ogg */,
+				95B3FEA4280E2BDE001D6EFE /* click.ogg */,
+				95B3FEA5280E2BDE001D6EFE /* moedas.ogg */,
+				95B3FEA1280E2BDD001D6EFE /* relogio.ogg */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		95B3FEA6280E3631001D6EFE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +422,7 @@
 				5092504C27A36B57006DEDA4 /* SceneDelegate.swift in Sources */,
 				509250D327AF723C006DEDA4 /* QuestionViewController.swift in Sources */,
 				50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */,
+				95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */,
 				509250CE27AF6FBF006DEDA4 /* Level.swift in Sources */,
 				509250D627AF77F5006DEDA4 /* Question.swift in Sources */,
 				5092508127AF2A99006DEDA4 /* LevelListViewController.swift in Sources */,
