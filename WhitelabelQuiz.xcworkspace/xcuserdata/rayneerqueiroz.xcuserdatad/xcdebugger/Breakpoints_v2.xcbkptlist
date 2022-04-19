@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C6EF6F94-F0B4-401C-9134-4A214921A8E1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WhitelabelQuiz/Sources/Data/LevelsService.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "28DB8B21-9554-4450-BDE6-112D44613A45"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WhitelabelQuiz/Sources/Data/LevelsService.swift"
@@ -33,6 +33,22 @@
             startingLineNumber = "23"
             endingLineNumber = "23"
             landmarkName = "getLevels()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A22AA32-F0B4-4F0D-9ED9-D62C1EEEF48C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WhitelabelQuiz/Sources/Util/UIViewController+Additions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "setupNavigationBar()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

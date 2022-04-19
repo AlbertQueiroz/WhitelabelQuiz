@@ -43,6 +43,7 @@ final class QuestionViewController: UIViewController {
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
     }
 
     private func didAnswer() {
@@ -88,13 +89,18 @@ extension QuestionViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
 
+        cell.textLabel?.textAlignment = .center
+        cell.backgroundColor = .clear
+        
         switch indexPath.section {
         case 0:
             cell.textLabel?.text = question.question
-            cell.textLabel?.textAlignment = .center
             cell.isUserInteractionEnabled = false
+            setAnswerBackground(for: cell, at: .question)
         case 1:
             cell.textLabel?.text = answers[indexPath.row]
+            cell.selectionStyle = .none
+            setAnswerBackground(for: cell, at: .clear)
         default:
             return cell
         }
@@ -104,7 +110,7 @@ extension QuestionViewController: UITableViewDataSource {
 
 extension QuestionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        indexPath.section == 0 ? 200 : 60
+        indexPath.section == 0 ? 300 : 80
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -114,17 +120,45 @@ extension QuestionViewController: UITableViewDelegate {
 
         let correctAnswer = indexPath.row == question.answerIndex
         let correctAnswerCell = tableView.cellForRow(at: IndexPath(row: question.answerIndex, section: 1))
-
-        correctAnswerCell?.backgroundColor = .green
+        setAnswerBackground(for: correctAnswerCell, at: .correct)
 
         if !correctAnswer {
-            cell?.backgroundColor = .red
+            setAnswerBackground(for: cell, at: .wrong)
         }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.didAnswer()
         }
+    }
+}
 
-        tableView.deselectRow(at: indexPath, animated: true)
+extension QuestionViewController {
+    private enum AnswerStatus {
+        case question
+        case clear
+        case correct
+        case wrong
+    }
+    
+    private func setAnswerBackground(
+        for cell: UITableViewCell?,
+        at status: AnswerStatus
+    ) {
+        var imageName: String
+        switch status {
+        case .clear:
+            imageName = "item-branco"
+        case .correct:
+            imageName = "item-verde"
+        case .wrong:
+            imageName = "item-vermelho"
+        case .question:
+            imageName = "perg"
+        }
+        
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        cell?.backgroundView = imageView
     }
 }

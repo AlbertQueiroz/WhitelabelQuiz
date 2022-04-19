@@ -20,9 +20,9 @@ class LevelListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Níveis"
         getQuestions()
         setupTableView()
+        setupNavigationBar()
     }
 
     override func viewWillAppear(_ animated: Bool) {

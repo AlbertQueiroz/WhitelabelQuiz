@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,19 +21,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-6c-57v">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-premiacao" translatesAutoresizingMaskIntoConstraints="NO" id="QPp-KM-b6g">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-6c-57v">
                     <rect key="frame" x="16" y="60" width="42" height="42"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="42" id="12D-JW-LfW"/>
                         <constraint firstAttribute="width" constant="42" id="BGs-rS-VYT"/>
                     </constraints>
+                    <state key="normal" image="fecharB"/>
                     <connections>
                         <action selector="close:" destination="-1" eventType="touchUpInside" id="jXq-d0-Z4X"/>
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eff-D4-vJ8">
                     <rect key="frame" x="0.0" y="102" width="414" height="760"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -42,14 +46,20 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eff-D4-vJ8" secondAttribute="trailing" id="4v4-3u-uro"/>
                 <constraint firstItem="vQh-6c-57v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7fn-rP-AVz"/>
                 <constraint firstItem="eff-D4-vJ8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IF3-Bw-cIK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QPp-KM-b6g" secondAttribute="trailing" id="IjF-oh-2Sd"/>
+                <constraint firstAttribute="bottom" secondItem="QPp-KM-b6g" secondAttribute="bottom" id="NcD-MZ-QIW"/>
                 <constraint firstItem="eff-D4-vJ8" firstAttribute="top" secondItem="vQh-6c-57v" secondAttribute="bottom" id="ckl-8q-K3k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eff-D4-vJ8" secondAttribute="bottom" id="f5R-9U-BP1"/>
                 <constraint firstItem="vQh-6c-57v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="iT1-ID-lqj"/>
+                <constraint firstItem="QPp-KM-b6g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p0R-u8-H7x"/>
+                <constraint firstItem="QPp-KM-b6g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xaV-0c-wpP"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
         </view>
     </objects>
     <resources>
+        <image name="fecharB" width="769" height="768"/>
+        <image name="fundo-premiacao" width="720" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
