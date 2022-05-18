@@ -14,7 +14,6 @@
 		5092505927A36B5A006DEDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5092505727A36B5A006DEDA4 /* LaunchScreen.storyboard */; };
 		5092506427A36B5A006DEDA4 /* WhitelabelQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092506327A36B5A006DEDA4 /* WhitelabelQuizTests.swift */; };
 		5092506F27A36B5A006DEDA4 /* WhitelabelQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092506E27A36B5A006DEDA4 /* WhitelabelQuizUITests.swift */; };
-		5092508127AF2A99006DEDA4 /* LevelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092508027AF2A99006DEDA4 /* LevelListViewController.swift */; };
 		509250CE27AF6FBF006DEDA4 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509250CD27AF6FBF006DEDA4 /* Level.swift */; };
 		509250D327AF723C006DEDA4 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509250D127AF723C006DEDA4 /* QuestionViewController.swift */; };
 		509250D427AF723C006DEDA4 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 509250D227AF723C006DEDA4 /* QuestionViewController.xib */; };
@@ -25,10 +24,21 @@
 		50A1D51C27EBF4C5007F0D95 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A1D51A27EBF4C5007F0D95 /* MainMenuViewController.xib */; };
 		50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBC16A27EA8D680029B49B /* LevelsService.swift */; };
 		50EBC16D27EA920C0029B49B /* levels.json in Resources */ = {isa = PBXBuildFile; fileRef = 50EBC16927EA8A500029B49B /* levels.json */; };
+		951CF2D5283283E800895EB8 /* moedas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D0283283E800895EB8 /* moedas.mp3 */; };
+		951CF2D6283283E800895EB8 /* audio-fundo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D1283283E800895EB8 /* audio-fundo.mp3 */; };
+		951CF2D7283283E800895EB8 /* 10-segundos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D2283283E800895EB8 /* 10-segundos.mp3 */; };
+		951CF2D8283283E800895EB8 /* relogio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D3283283E800895EB8 /* relogio.mp3 */; };
+		951CF2D9283283E800895EB8 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D4283283E800895EB8 /* click.mp3 */; };
+		951CF2DC283286A800895EB8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CF2DB283286A800895EB8 /* AboutViewController.swift */; };
+		951CF2DF2832889000895EB8 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CF2DE2832889000895EB8 /* StoreViewController.swift */; };
 		95750A572807AE4A00CA714D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A562807AE4A00CA714D /* FirebaseRemoteConfig */; };
 		95750A592807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */; };
 		95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */; };
 		95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */; };
+		95F3CAA1283520A7001F30D6 /* LevelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CA9F283520A7001F30D6 /* LevelListViewController.swift */; };
+		95F3CAA2283520A7001F30D6 /* LevelListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */; };
+		95F3CAA428352706001F30D6 /* SetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */; };
+		95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +72,6 @@
 		5092506A27A36B5A006DEDA4 /* WhitelabelQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitelabelQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092506E27A36B5A006DEDA4 /* WhitelabelQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitelabelQuizUITests.swift; sourceTree = "<group>"; };
 		5092507027A36B5A006DEDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5092508027AF2A99006DEDA4 /* LevelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListViewController.swift; sourceTree = "<group>"; };
 		509250CD27AF6FBF006DEDA4 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		509250D127AF723C006DEDA4 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		509250D227AF723C006DEDA4 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
@@ -73,13 +82,19 @@
 		50A1D51A27EBF4C5007F0D95 /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		50EBC16927EA8A500029B49B /* levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = levels.json; sourceTree = "<group>"; };
 		50EBC16A27EA8D680029B49B /* LevelsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsService.swift; sourceTree = "<group>"; };
+		951CF2D0283283E800895EB8 /* moedas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moedas.mp3; sourceTree = "<group>"; };
+		951CF2D1283283E800895EB8 /* audio-fundo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "audio-fundo.mp3"; sourceTree = "<group>"; };
+		951CF2D2283283E800895EB8 /* 10-segundos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10-segundos.mp3"; sourceTree = "<group>"; };
+		951CF2D3283283E800895EB8 /* relogio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = relogio.mp3; sourceTree = "<group>"; };
+		951CF2D4283283E800895EB8 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		951CF2DB283286A800895EB8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		951CF2DE2832889000895EB8 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		95B3FEA1280E2BDD001D6EFE /* relogio.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = relogio.ogg; sourceTree = "<group>"; };
-		95B3FEA2280E2BDD001D6EFE /* 10-segundos.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "10-segundos.ogg"; sourceTree = "<group>"; };
-		95B3FEA3280E2BDE001D6EFE /* audio-fundo.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "audio-fundo.ogg"; sourceTree = "<group>"; };
-		95B3FEA4280E2BDE001D6EFE /* click.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.ogg; sourceTree = "<group>"; };
-		95B3FEA5280E2BDE001D6EFE /* moedas.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = moedas.ogg; sourceTree = "<group>"; };
 		95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		95F3CA9F283520A7001F30D6 /* LevelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListViewController.swift; sourceTree = "<group>"; };
+		95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelListViewController.xib; sourceTree = "<group>"; };
+		95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
+		95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +209,8 @@
 		5092507F27AF2A76006DEDA4 /* LevelList */ = {
 			isa = PBXGroup;
 			children = (
-				5092508027AF2A99006DEDA4 /* LevelListViewController.swift */,
+				95F3CA9F283520A7001F30D6 /* LevelListViewController.swift */,
+				95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */,
 			);
 			path = LevelList;
 			sourceTree = "<group>";
@@ -213,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				509250D927AF791E006DEDA4 /* GetLevelsUseCase.swift */,
+				95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */,
+				95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -229,6 +247,8 @@
 		509250CF27AF71CF006DEDA4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				951CF2DD2832888000895EB8 /* Store */,
+				951CF2DA2832868F00895EB8 /* About */,
 				50A1D51827EBF4AF007F0D95 /* MainMenu */,
 				5092507F27AF2A76006DEDA4 /* LevelList */,
 				509250D027AF71E0006DEDA4 /* Question */,
@@ -254,14 +274,30 @@
 			path = MainMenu;
 			sourceTree = "<group>";
 		};
+		951CF2DA2832868F00895EB8 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				951CF2DB283286A800895EB8 /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		951CF2DD2832888000895EB8 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				951CF2DE2832889000895EB8 /* StoreViewController.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		95B3FEA0280E2BD1001D6EFE /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				95B3FEA2280E2BDD001D6EFE /* 10-segundos.ogg */,
-				95B3FEA3280E2BDE001D6EFE /* audio-fundo.ogg */,
-				95B3FEA4280E2BDE001D6EFE /* click.ogg */,
-				95B3FEA5280E2BDE001D6EFE /* moedas.ogg */,
-				95B3FEA1280E2BDD001D6EFE /* relogio.ogg */,
+				951CF2D2283283E800895EB8 /* 10-segundos.mp3 */,
+				951CF2D1283283E800895EB8 /* audio-fundo.mp3 */,
+				951CF2D4283283E800895EB8 /* click.mp3 */,
+				951CF2D0283283E800895EB8 /* moedas.mp3 */,
+				951CF2D3283283E800895EB8 /* relogio.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -384,12 +420,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951CF2D6283283E800895EB8 /* audio-fundo.mp3 in Resources */,
 				50EBC16D27EA920C0029B49B /* levels.json in Resources */,
+				951CF2D9283283E800895EB8 /* click.mp3 in Resources */,
+				95F3CAA2283520A7001F30D6 /* LevelListViewController.xib in Resources */,
 				5092505927A36B5A006DEDA4 /* LaunchScreen.storyboard in Resources */,
 				5092505627A36B5A006DEDA4 /* Assets.xcassets in Resources */,
 				50A1D51C27EBF4C5007F0D95 /* MainMenuViewController.xib in Resources */,
+				951CF2D7283283E800895EB8 /* 10-segundos.mp3 in Resources */,
 				509250D427AF723C006DEDA4 /* QuestionViewController.xib in Resources */,
 				95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */,
+				951CF2D8283283E800895EB8 /* relogio.mp3 in Resources */,
+				951CF2D5283283E800895EB8 /* moedas.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,13 +461,17 @@
 				50A1D51B27EBF4C5007F0D95 /* MainMenuViewController.swift in Sources */,
 				5092505427A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld in Sources */,
 				5092504A27A36B57006DEDA4 /* AppDelegate.swift in Sources */,
+				951CF2DF2832889000895EB8 /* StoreViewController.swift in Sources */,
 				5092504C27A36B57006DEDA4 /* SceneDelegate.swift in Sources */,
 				509250D327AF723C006DEDA4 /* QuestionViewController.swift in Sources */,
 				50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */,
+				95F3CAA428352706001F30D6 /* SetCurrentLevelUseCase.swift in Sources */,
+				95F3CAA1283520A7001F30D6 /* LevelListViewController.swift in Sources */,
+				95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */,
 				95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */,
+				951CF2DC283286A800895EB8 /* AboutViewController.swift in Sources */,
 				509250CE27AF6FBF006DEDA4 /* Level.swift in Sources */,
 				509250D627AF77F5006DEDA4 /* Question.swift in Sources */,
-				5092508127AF2A99006DEDA4 /* LevelListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

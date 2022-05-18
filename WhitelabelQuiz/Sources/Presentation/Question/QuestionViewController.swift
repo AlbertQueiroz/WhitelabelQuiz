@@ -65,6 +65,9 @@ final class QuestionViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
             self.navigationController?.popViewController(animated: false)
         })
+        
+        SetCurrentLevelUseCase().execute(level: level.number)
+        
         present(alert, animated: true, completion: nil)
     }
 
@@ -94,6 +97,7 @@ extension QuestionViewController: UITableViewDataSource {
         
         switch indexPath.section {
         case 0:
+            cell.textLabel?.numberOfLines = 0
             cell.textLabel?.text = question.question
             cell.isUserInteractionEnabled = false
             setAnswerBackground(for: cell, at: .question)

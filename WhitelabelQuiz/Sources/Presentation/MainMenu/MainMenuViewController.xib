@@ -49,6 +49,9 @@
                             <buttonConfiguration key="configuration" style="plain" title=" ">
                                 <backgroundConfiguration key="background" image="lojaB" imageContentMode="scaleAspectFit"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="store:" destination="-1" eventType="touchUpInside" id="Agt-gV-FtG"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-vt-lRH">
                             <rect key="frame" x="0.0" y="249.5" width="364" height="100.5"/>
@@ -56,6 +59,9 @@
                             <buttonConfiguration key="configuration" style="plain" title=" ">
                                 <backgroundConfiguration key="background" image="sobre" imageContentMode="scaleAspectFit"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="about:" destination="-1" eventType="touchUpInside" id="BOo-Ti-aME"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

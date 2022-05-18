@@ -17,6 +17,19 @@ class MainMenuViewController: UIViewController {
     }
 
     @IBAction func play(_ sender: Any) {
-        navigationController?.pushViewController(LevelListViewController(), animated: true)
+        route(to: LevelListViewController())
     }
+    
+    @IBAction func store(_ sender: Any) {
+        route(to: StoreViewController())
+    }
+    
+    @IBAction func about(_ sender: Any) {
+        route(to: AboutViewController())
+    }
+    
+    private func route(to controller: UIViewController) {
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }

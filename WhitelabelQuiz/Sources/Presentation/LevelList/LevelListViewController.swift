@@ -11,18 +11,15 @@ class LevelListViewController: UIViewController {
 
     private let getLevelsUseCase = GetLevelUseCase()
     private var levels = [Level]()
-
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    private var currentLevel: Int {
+        GetCurrentLevelUseCase().execute()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getQuestions()
-        setupTableView()
         setupNavigationBar()
+        setButtonsImages()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -33,44 +30,42 @@ class LevelListViewController: UIViewController {
     private func getQuestions() {
         levels = getLevelsUseCase.execute()
     }
-
-    private func setupTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-    }
-
-}
-
-extension LevelListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        levels.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let level = levels[indexPath.row]
-        cell.textLabel?.text = "Level \(level.number)"
-        return cell
-    }
-
-}
-
-extension LevelListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let level = levels[indexPath.row]
+    
+    @IBAction func openLevel(_ sender: Any) {
+        guard let sender = sender as? UIButton,
+              sender.tag - 1 <= currentLevel else { return blockLevelAlert() }
+        let level = levels[sender.tag - 1]
         let levelController = QuestionViewController(level: level)
-
-        tableView.deselectRow(at: indexPath, animated: true)
+        
         navigationController?.pushViewController(
             levelController,
             animated: false
         )
+    }
+    
+    private func blockLevelAlert() {
+        let alert = UIAlertController(title: "Nível bloqueado", message: "Infelizmente, este nível está bloqueado", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func setButtonsImages() {
+        for tmpTag in 1...5 {
+            guard let tmpButton = view.viewWithTag(tmpTag) as? UIButton else { continue }
+            setButtonImage(tmpButton)
+        }
+    }
+    
+    private func setButtonImage(_ button: UIButton) {
+        var imageName = "nivel-novo"
+        if button.tag - 1 > currentLevel {
+            imageName = "nivel-bloq"
+        } else if button.tag - 1 == currentLevel {
+            imageName = "nivel"
+        }
+        
+        let image = UIImage(named: imageName)
+        button.setBackgroundImage(image, for: .normal)
     }
 }
