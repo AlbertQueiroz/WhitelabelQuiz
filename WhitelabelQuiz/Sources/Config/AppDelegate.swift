@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         fetchConfig()
+                
+        MusicManager.playBackgroundMusic()
         
         return true
     }

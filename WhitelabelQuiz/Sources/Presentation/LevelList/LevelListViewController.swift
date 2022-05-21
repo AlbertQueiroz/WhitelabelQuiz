@@ -19,12 +19,12 @@ class LevelListViewController: UIViewController {
         super.viewDidLoad()
         getQuestions()
         setupNavigationBar()
-        setButtonsImages()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = false
+        setButtonsImages()
     }
 
     private func getQuestions() {

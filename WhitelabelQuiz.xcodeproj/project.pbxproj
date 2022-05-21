@@ -31,6 +31,8 @@
 		951CF2D9283283E800895EB8 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 951CF2D4283283E800895EB8 /* click.mp3 */; };
 		951CF2DC283286A800895EB8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CF2DB283286A800895EB8 /* AboutViewController.swift */; };
 		951CF2DF2832889000895EB8 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951CF2DE2832889000895EB8 /* StoreViewController.swift */; };
+		954B609928395E92006E32C3 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B609828395E92006E32C3 /* AudioManager.swift */; };
+		954B609B28395F07006E32C3 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B609A28395F07006E32C3 /* MusicManager.swift */; };
 		95750A572807AE4A00CA714D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A562807AE4A00CA714D /* FirebaseRemoteConfig */; };
 		95750A592807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 95750A582807AE4A00CA714D /* FirebaseRemoteConfigSwift-Beta */; };
 		95750A5B2807AEDA00CA714D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */; };
@@ -89,6 +91,8 @@
 		951CF2D4283283E800895EB8 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		951CF2DB283286A800895EB8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		951CF2DE2832889000895EB8 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		954B609828395E92006E32C3 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		954B609A28395F07006E32C3 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
 		95750A5A2807AEDA00CA714D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		95F3CA9F283520A7001F30D6 /* LevelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelListViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				95B3FEA7280E364D001D6EFE /* UIViewController+Additions.swift */,
+				954B609A28395F07006E32C3 /* MusicManager.swift */,
+				954B609828395E92006E32C3 /* AudioManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				509250D827AF78C3006DEDA4 /* LevelsRepository.swift in Sources */,
 				509250DA27AF791E006DEDA4 /* GetLevelsUseCase.swift in Sources */,
 				50A1D51B27EBF4C5007F0D95 /* MainMenuViewController.swift in Sources */,
+				954B609928395E92006E32C3 /* AudioManager.swift in Sources */,
 				5092505427A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld in Sources */,
 				5092504A27A36B57006DEDA4 /* AppDelegate.swift in Sources */,
 				951CF2DF2832889000895EB8 /* StoreViewController.swift in Sources */,
@@ -466,6 +473,7 @@
 				509250D327AF723C006DEDA4 /* QuestionViewController.swift in Sources */,
 				50EBC16B27EA8D680029B49B /* LevelsService.swift in Sources */,
 				95F3CAA428352706001F30D6 /* SetCurrentLevelUseCase.swift in Sources */,
+				954B609B28395F07006E32C3 /* MusicManager.swift in Sources */,
 				95F3CAA1283520A7001F30D6 /* LevelListViewController.swift in Sources */,
 				95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */,
 				95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */,

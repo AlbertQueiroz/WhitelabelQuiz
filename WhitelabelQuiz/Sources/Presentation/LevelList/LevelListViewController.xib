@@ -82,6 +82,12 @@
                         <action selector="openLevel:" destination="-1" eventType="touchUpInside" id="XSW-ni-jub"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconBanco" translatesAutoresizingMaskIntoConstraints="NO" id="8Q7-HL-txO">
+                    <rect key="frame" x="92" y="44" width="230" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="6rE-cJ-LdX"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -96,9 +102,12 @@
                 <constraint firstItem="S0y-Qq-0lb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Kvn-Yp-DkN"/>
                 <constraint firstItem="xRS-bF-H1r" firstAttribute="bottom" secondItem="Mcc-Gz-4bw" secondAttribute="bottom" multiplier="0.95" id="LzU-7k-gBQ"/>
                 <constraint firstItem="xRS-bF-H1r" firstAttribute="leading" secondItem="Mcc-Gz-4bw" secondAttribute="trailing" constant="64" id="TMA-Dk-6vg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Q7-HL-txO" secondAttribute="trailing" constant="92" id="U9Q-Pw-zbW"/>
                 <constraint firstItem="Wif-uT-waI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y4F-EA-3Xg"/>
+                <constraint firstItem="8Q7-HL-txO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hKR-PY-Lbb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h1o-1s-ldv" secondAttribute="trailing" constant="20" id="o4L-Rs-Hnl"/>
                 <constraint firstAttribute="bottom" secondItem="Wif-uT-waI" secondAttribute="bottom" id="qjv-Xf-ffh"/>
+                <constraint firstItem="8Q7-HL-txO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="92" id="u4z-TX-Sf2"/>
                 <constraint firstItem="h1o-1s-ldv" firstAttribute="top" secondItem="S0y-Qq-0lb" secondAttribute="bottom" id="upS-p7-PxH"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="82.366071428571431"/>
@@ -106,6 +115,7 @@
     </objects>
     <resources>
         <image name="caminho" width="720" height="1280"/>
+        <image name="iconBanco" width="1024" height="370"/>
         <image name="nivel" width="769" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

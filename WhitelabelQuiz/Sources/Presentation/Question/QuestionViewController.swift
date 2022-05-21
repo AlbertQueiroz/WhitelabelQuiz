@@ -66,6 +66,7 @@ final class QuestionViewController: UIViewController {
             self.navigationController?.popViewController(animated: false)
         })
         
+        SoundManager.playSound(resource: "moedas")
         SetCurrentLevelUseCase().execute(level: level.number)
         
         present(alert, animated: true, completion: nil)
