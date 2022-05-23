@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LevelListViewController" customModule="WhitelabelQuiz" customModuleProvider="target">
             <connections>
+                <outlet property="pointsLabel" destination="ree-s8-5yU" id="WgP-Dg-PAd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -88,10 +89,17 @@
                         <constraint firstAttribute="height" constant="82" id="6rE-cJ-LdX"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ree-s8-5yU">
+                    <rect key="frame" x="207" y="80.5" width="99" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="ree-s8-5yU" firstAttribute="centerY" secondItem="8Q7-HL-txO" secondAttribute="centerY" constant="6" id="4HZ-z6-iKM"/>
                 <constraint firstItem="Mcc-Gz-4bw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="85O-oX-Xsz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wif-uT-waI" secondAttribute="trailing" id="8x8-uc-hOG"/>
                 <constraint firstItem="Wif-uT-waI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AAo-tH-ZhQ"/>
@@ -104,7 +112,9 @@
                 <constraint firstItem="xRS-bF-H1r" firstAttribute="leading" secondItem="Mcc-Gz-4bw" secondAttribute="trailing" constant="64" id="TMA-Dk-6vg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Q7-HL-txO" secondAttribute="trailing" constant="92" id="U9Q-Pw-zbW"/>
                 <constraint firstItem="Wif-uT-waI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y4F-EA-3Xg"/>
+                <constraint firstItem="ree-s8-5yU" firstAttribute="leading" secondItem="8Q7-HL-txO" secondAttribute="centerX" id="dsM-KR-1Ni"/>
                 <constraint firstItem="8Q7-HL-txO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hKR-PY-Lbb"/>
+                <constraint firstItem="ree-s8-5yU" firstAttribute="trailing" secondItem="8Q7-HL-txO" secondAttribute="trailing" constant="-16" id="jMg-Md-aZg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h1o-1s-ldv" secondAttribute="trailing" constant="20" id="o4L-Rs-Hnl"/>
                 <constraint firstAttribute="bottom" secondItem="Wif-uT-waI" secondAttribute="bottom" id="qjv-Xf-ffh"/>
                 <constraint firstItem="8Q7-HL-txO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="92" id="u4z-TX-Sf2"/>

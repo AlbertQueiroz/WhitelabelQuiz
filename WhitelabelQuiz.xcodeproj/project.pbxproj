@@ -43,6 +43,8 @@
 		95F3CAA2283520A7001F30D6 /* LevelListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */; };
 		95F3CAA428352706001F30D6 /* SetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */; };
 		95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */; };
+		95FE61F5283C25D300DE1D46 /* GetPointsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE61F4283C25D300DE1D46 /* GetPointsUseCase.swift */; };
+		95FE61F7283C25ED00DE1D46 /* SetPointsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE61F6283C25ED00DE1D46 /* SetPointsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelListViewController.xib; sourceTree = "<group>"; };
 		95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
 		95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
+		95FE61F4283C25D300DE1D46 /* GetPointsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPointsUseCase.swift; sourceTree = "<group>"; };
+		95FE61F6283C25ED00DE1D46 /* SetPointsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPointsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,8 @@
 				509250D927AF791E006DEDA4 /* GetLevelsUseCase.swift */,
 				95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */,
 				95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */,
+				95FE61F4283C25D300DE1D46 /* GetPointsUseCase.swift */,
+				95FE61F6283C25ED00DE1D46 /* SetPointsUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				50A1D51B27EBF4C5007F0D95 /* MainMenuViewController.swift in Sources */,
 				954B609928395E92006E32C3 /* AudioManager.swift in Sources */,
 				5092505427A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld in Sources */,
+				95FE61F7283C25ED00DE1D46 /* SetPointsUseCase.swift in Sources */,
 				954B60A128397273006E32C3 /* StoreItem.swift in Sources */,
 				5092504A27A36B57006DEDA4 /* AppDelegate.swift in Sources */,
 				5092504C27A36B57006DEDA4 /* SceneDelegate.swift in Sources */,
@@ -492,6 +499,7 @@
 				95F3CAA1283520A7001F30D6 /* LevelListViewController.swift in Sources */,
 				95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */,
 				95B3FEA8280E364D001D6EFE /* UIViewController+Additions.swift in Sources */,
+				95FE61F5283C25D300DE1D46 /* GetPointsUseCase.swift in Sources */,
 				954B609E28396B70006E32C3 /* StoreViewController.swift in Sources */,
 				951CF2DC283286A800895EB8 /* AboutViewController.swift in Sources */,
 				509250CE27AF6FBF006DEDA4 /* Level.swift in Sources */,

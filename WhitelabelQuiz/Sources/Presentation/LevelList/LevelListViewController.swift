@@ -9,10 +9,15 @@ import UIKit
 
 class LevelListViewController: UIViewController {
 
+    @IBOutlet weak var pointsLabel: UILabel!
     private let getLevelsUseCase = GetLevelUseCase()
     private var levels = [Level]()
     private var currentLevel: Int {
         GetCurrentLevelUseCase().execute()
+    }
+    
+    private var points: Int {
+        GetPointsUseCase().execute()
     }
 
     override func viewDidLoad() {
@@ -25,6 +30,7 @@ class LevelListViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = false
         setButtonsImages()
+        setPoints()
     }
 
     private func getQuestions() {
@@ -48,6 +54,10 @@ class LevelListViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    private func setPoints() {
+        pointsLabel.text = "\(points)"
     }
     
     private func setButtonsImages() {

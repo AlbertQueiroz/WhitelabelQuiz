@@ -95,6 +95,7 @@ extension QuestionViewController: UITableViewDataSource {
 
         cell.textLabel?.textAlignment = .center
         cell.backgroundColor = .clear
+        cell.textLabel?.textColor = .black
         
         switch indexPath.section {
         case 0:

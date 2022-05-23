@@ -14,6 +14,7 @@
                 <outlet property="itemImage" destination="WlS-p3-ffx" id="qcA-LH-BsQ"/>
                 <outlet property="itemName" destination="dAe-hu-E9t" id="xsv-Cp-F4K"/>
                 <outlet property="itemPrice" destination="ItI-VG-Nyi" id="Uia-nA-Jay"/>
+                <outlet property="pointsLabel" destination="lAP-aC-7NC" id="AxX-Z1-0Fv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -107,6 +108,12 @@
                         <action selector="previousItem:" destination="-1" eventType="touchUpInside" id="NOD-RJ-h1w"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[points]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-aC-7NC">
+                    <rect key="frame" x="207" y="81" width="99" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -114,13 +121,16 @@
                 <constraint firstItem="Bc6-ta-H9P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0AV-MK-hL3"/>
                 <constraint firstItem="Pei-LT-aaX" firstAttribute="top" secondItem="Bc6-ta-H9P" secondAttribute="centerY" id="3Hc-P4-Nfa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hIc-pt-W0K" secondAttribute="trailing" constant="34" id="7XV-fr-FzY"/>
+                <constraint firstItem="lAP-aC-7NC" firstAttribute="trailing" secondItem="EVP-S3-tmI" secondAttribute="trailing" constant="-16" id="A4J-eA-P7h"/>
                 <constraint firstAttribute="bottom" secondItem="Bc6-ta-H9P" secondAttribute="bottom" id="J6U-YE-nMD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pEm-kk-wcv" secondAttribute="bottom" constant="64" id="JbK-Eb-1Hg"/>
                 <constraint firstItem="hIc-pt-W0K" firstAttribute="top" secondItem="Bc6-ta-H9P" secondAttribute="centerY" id="TVt-4I-0A1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EVP-S3-tmI" secondAttribute="trailing" constant="92" id="WHX-JV-AME"/>
+                <constraint firstItem="lAP-aC-7NC" firstAttribute="centerY" secondItem="EVP-S3-tmI" secondAttribute="centerY" constant="6" id="XUG-Ac-gHd"/>
                 <constraint firstItem="pEm-kk-wcv" firstAttribute="trailing" secondItem="EVP-S3-tmI" secondAttribute="trailing" id="bDV-7I-JAY"/>
                 <constraint firstItem="Pei-LT-aaX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dXY-YT-uDC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bc6-ta-H9P" secondAttribute="trailing" id="fjq-bX-vgu"/>
+                <constraint firstItem="lAP-aC-7NC" firstAttribute="leading" secondItem="EVP-S3-tmI" secondAttribute="centerX" id="g65-YT-Am7"/>
                 <constraint firstItem="pEm-kk-wcv" firstAttribute="leading" secondItem="EVP-S3-tmI" secondAttribute="leading" id="kkA-DM-r1e"/>
                 <constraint firstItem="EVP-S3-tmI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="92" id="qXw-Pb-kml"/>
                 <constraint firstItem="MQG-2k-T77" firstAttribute="centerY" secondItem="Bc6-ta-H9P" secondAttribute="centerY" multiplier="1.1" id="rgN-ew-try"/>
