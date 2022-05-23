@@ -1,72 +1,427 @@
 [
-    {
-        "number": 1,
-        "questions": [
-            {
-                "question": "What's my name?",
-                "answerIndex": 0,
-                "answers": [
-                    "Albert",
-                    "John",
-                    "Mary",
-                    "Grace"
-                ]
-            },
-            {
-                "question": "What's your name?",
-                "answerIndex": 0,
-                "answers": [
-                    "Albert",
-                    "John",
-                    "Mary",
-                    "Grace"
-                ]
-            }
+  {
+    "number": 1,
+    "questions": [
+      {
+        "question": "Seus pais pedem que vá ao sítio do seu José para comprar ovos de galinha caipira. E dizem: o que sobrar é seu. O que você faz?",
+        "answerIndex": 2,
+        "answers": [
+          "Gasta de imediato com brinquedos.",
+          "Compra comida.",
+          "Guarda e economiza.",
+          "Compra um sorvete para você e seu amigo"
         ]
-    },
-    {
-        "number": 2,
-        "questions": [
-            {
-                "question": "What's my name?",
-                "answerIndex": 0,
-                "answers": [
-                    "Albert",
-                    "John",
-                    "Mary",
-                    "Grace"
-                ]
-            }
+      },
+      {
+        "question": "Sabendo que sua mãe tem uma boa criação de galinhas, qual seria uma forma de obter uma renda extra com essa criação?",
+        "answerIndex": 0,
+        "answers": [
+          "Vender os ovos e as galinhas",
+          "Matar as galinhas",
+          "Dar os pintinhos das galinhas para os vizinhos",
+          "Dar os ovos para os seus amigos."
         ]
-    },
-    {
-        "number": 3,
-        "questions": [
-            {
-                "question": "What's my name?",
-                "answerIndex": 0,
-                "answers": [
-                    "Albert",
-                    "John",
-                    "Mary",
-                    "Grace"
-                ]
-            }
+      },
+      {
+        "question": "Durante um passeio na festa do padroeiro da cidade, seu tio lhe dá dinheiro para que gaste com comida, mas naquele momento você não está com com fome,  o que fará:",
+        "answerIndex": 0,
+        "answers": [
+          "Aceita o dinheiro e o utiliza futuramente.",
+          "Aceita o dinheiro e compra o sorvete mesmo sem vontade.",
+          "Aceita o dinheiro e compra outra coisa.",
+          "Compra um brinquedo que você sabe que não brincar muito."
         ]
-    },
-    {
-        "number": 4,
-        "questions": [
-            {
-                "question": "What's my name?",
-                "answerIndex": 0,
-                "answers": [
-                    "Albert",
-                    "John",
-                    "Mary",
-                    "Grace"
-                ]
-            }
+      },
+      {
+        "question": "Todo domingo avô vem lhe visitar na fazenda e sempre lhe traz umas moedas para lhe presentear. O que você faz com essas moedas?",
+        "answerIndex": 1,
+        "answers": [
+          "Gasta com videogame",
+          "Guarda em um cofrinho",
+          "Gasta com comida",
+          "Vai comprar sorvete"
         ]
-    },
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "questions": [
+      {
+        "question": "Você e seus pais foram passear no sítio dos seus tios. Lá uma das formas de se obter lucro é a venda de porcos. Seu pai comprou um porco por R$100,00. Após 3 meses ele gastou R$ 80,00 com ração e R$ 20,00 com medicamentos. Se ele vender o porco por R$200,00, ele teve?",
+        "answerIndex": 0,
+        "answers": [
+          "Recuperou gastou",
+          "Prejuízo",
+          "Seus tios têm prazo a cumprir.",
+          "Seus tios estão em déficit."
+        ]
+      },
+      {
+        "question": "Seus pais precisam construir um curral para os animais, mas não possuem dinheiro suficiente, vendo que precisavam fazer a construção com urgencia resolveram fazer um empréstimo. O que eles precisam fazer?",
+        "answerIndex": 0,
+        "answers": [
+          "Precisam ir ao banco fazer o empréstimo.",
+          "Precisam pedir aos visinhos.",
+          "Precisam fazer uma rifa.",
+          "Precisam fazer um financiamento."
+        ]
+      },
+      {
+        "question": "Seus pais compraram novas ferramentas agrícolas (enxada, foice, broca), como forma de pagamento eles usaram cartão de credito. Chegado o dia do pagamento da fatura qual é a melhor opção?",
+        "answerIndex": 0,
+        "answers": [
+          "Pagar o valor total da fatura",
+          "Pagar uma pequena parte",
+          "Não pagar",
+          "Depositar o dinheiro na conta da empresa do cartão"
+        ]
+      },
+      {
+        "question": "Há sempre contas do mercadinho à pagar no final do mês, por isso, seus pais disseram que o dinheiro que é para pagar essa conta é:",
+        "answerIndex": 0,
+        "answers": [
+          "Despesa.",
+          "Desperdício.",
+          "Financiamento.",
+          "Empréstimo."
+        ]
+      },
+      {
+        "question": "Seu pai cria uma vaquinha leiteira, porém ela estava dando muitos gastos e nada de lucro, de que forma essa vaquinha poderia dar lucro ao invés de gastos?",
+        "answerIndex": 3,
+        "answers": [
+          "Vendendo a vaca",
+          "Comprando um boi",
+          "Não adianta ela não pode dar nenhum lucro",
+          "Vendendo o leite que ela produz"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "questions": [
+      {
+        "question": "O seu pai cria galinhas e vende ovos. O que você poderia fazer para ajudá-lo?",
+        "answerIndex": 0,
+        "answers": [
+          "Recolher os ovos e alimentar as galinhas.",
+          "Mata a galinha para o final de semana.",
+          "Quebra os ovos e vender a galinha.",
+          "Come os ovos e não ajuda seu pai."
+        ]
+      },
+      {
+        "question": "Seu pai produz verduras e legumes em uma pequena horta no quintal, como você pode ajudar seu pai à conseguir dinheiro através dessa pequena horta?",
+        "answerIndex": 0,
+        "answers": [
+          "Vendendo as verduras e legumes produzidos para o vizinhos",
+          "Dizer ao seu pai que as verduras e legumes só servem para consumo próprio",
+          "Vendendo apenas os legumes pois as verduras são muito baratas e não dão lucro.",
+          "Não ajudar na venda dessas verduras e legumes."
+        ]
+      },
+      {
+        "question": "Seus pais são agricultores, e quando acontece a colheita eles armazenam a produção para o consumo. O que poderia ser feito com o resto da safra?",
+        "answerIndex": 0,
+        "answers": [
+          "Vender",
+          "Doar",
+          "Emprestar",
+          "Dar para os porcos"
+        ]
+      },
+      {
+        "question": "Quem compra o feijão e o milho produzido no sítio dos seus tios são os:",
+        "answerIndex": 0,
+        "answers": [
+          "Consumidores.",
+          "Fornecedores.",
+          "Poupadores.",
+          "Negociantes."
+        ]
+      },
+      {
+        "question": "Quando sua mãe pede para que você desligue a luz do quarto quando sair, ou desligue a torneira quando estiver escovando os dentes, o que ela está fazendo com relação a luz e a água?",
+        "answerIndex": 0,
+        "answers": [
+          "Economizando.",
+          "Gastando.",
+          "Fornecendo.",
+          "Negociando."
+        ]
+      },
+      {
+        "question": "Pessoas que gastam água e luz sem necessidade e desperdiçam alimentos são?",
+        "answerIndex": 0,
+        "answers": [
+          "Gastadoras.",
+          "Fornecedores.",
+          "Poupadores.",
+          "Negociantes."
+        ]
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "questions": [
+      {
+        "question": "Seus pais vendem galinhas e estão juntando o dinheiro arecadado das vendas para poder comprar o seu material escolar.O que eles fizeram?",
+        "answerIndex": 0,
+        "answers": [
+          "Investimento.",
+          "Gasto.",
+          "Empréstimo.",
+          "Indenização."
+        ]
+      },
+      {
+        "question": "Sua mãe vende leite da vaquinha reprodutora, e assim consegue uma renda extra para casa, todo o dinheiro que ela consegue é guardado. Qual o melhor lugar para se guardar dinheiro?",
+        "answerIndex": 0,
+        "answers": [
+          "Banco.",
+          "Casa.",
+          "Cofrinho.",
+          "Colchão."
+        ]
+      },
+      {
+        "question": "Seu pai tem uma boa plantação de milho e depois de retirar o necessario para o consumo da familia ele costuma vender as sacas restantes. A venda dessas sacas rende uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Receita.",
+          "Juros.",
+          "Quinzena.",
+          "Indenização."
+        ]
+      },
+      {
+        "question": "Seus pais sempre costumam lhe dar uma pequena parte do dinheiro apurado na venda de ovos da qual você também ajuda pegando os ovos da galinha. Eles disseram que no futuro você poderá fazer um tipo de conta para guardar esse dinheiro. Qual é o tipo da conta?",
+        "answerIndex": 0,
+        "answers": [
+          "Conta de Poupança.",
+          "Apólice.",
+          "Conta de e-mail.",
+          "Conta corrente"
+        ]
+      },
+      {
+        "question": "Sua mãe sempre reclama que a conta de energia vem muito cara, o que isso significa?",
+        "answerIndex": 0,
+        "answers": [
+          "Você não economizou energia.",
+          "Você juntou todo o dinheiro.",
+          "Você perdeu o dinheiro.",
+          "Você economizou energia."
+        ]
+      },
+      {
+        "question": "Seu avó precisa de um trator novo para ajudar na plantação, como eles irá precisar por um curto periodo de tempo, ele precisa de uma outra alternativa além da compra. Qual seria ela?",
+        "answerIndex": 0,
+        "answers": [
+          "Alugar o trator",
+          "Pedir emprestado",
+          "Fazer uma vaquinha",
+          "Não plantar esse ano"
+        ]
+      },
+      {
+        "question": "Seus pais tem uma boa criação de cavalos, qual seria uma meneira de conseguir uma renda extra atraves dos cavalos?",
+        "answerIndex": 0,
+        "answers": [
+          "Alugá-los para pequenos passeios na fazenda.",
+          "Vendê-los, e não criar mais.",
+          "Dar eles de presente.",
+          "Não fazer nada."
+        ]
+      },
+      {
+        "question": "A vaca da fazenda do seu avô está doente fazendo com que eles fiquem sem a renda da venda do leite por tempo indeterminando. O que deve ser feito para que a vaquinha melhore e possa produzir novamente?",
+        "answerIndex": 0,
+        "answers": [
+          "Chamar um veterinario para trata-la",
+          "Não faça nada.",
+          "Ela pode melhorar sozinha",
+          "Venda o leito mesmo a vaca estando doente."
+        ]
+      },
+      {
+        "question": "Quando seus pais afirmam que todo o dinheiro conquistado na fazenda não é o suficiente para o mês eles estão dizendo que:",
+        "answerIndex": 0,
+        "answers": [
+          "Gastaram mais do que pudiam",
+          "Tem dinheiro sobrando",
+          "O lucro foi grande",
+          "Estão no prejuízo"
+        ]
+      },
+      {
+        "question": "Seu pai é produtor de leite, feijão, milho, ovos, frutas e verduras, além de agricultor o que o seu pai é?",
+        "answerIndex": 0,
+        "answers": [
+          "Investidor",
+          "Financiador.",
+          "Negociador.",
+          "Gastador"
+        ]
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "questions": [
+      {
+        "question": "Seus avós sempre explicam que é muito importante economizar agua para não faltar, por isso uma das ações que ajudam a economizar agua é:",
+        "answerIndex": 0,
+        "answers": [
+          "Desligar a torneira durante a escovação dos dentes",
+          "Lavar a calçada",
+          "Dar banho nos porcos",
+          "Lavar o carro com a mangueira"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      },
+      {
+        "question": "Sua familia está a espera de um novo integrante na familia, porém a casa não está preparada para receber mais um morador. Para construir o novo quarto pro bebe seus pais resolvem mecher na poupança isso que dizer que eles tiveram uma:",
+        "answerIndex": 0,
+        "answers": [
+          "Urgência",
+          "Necessidade",
+          "Imprevisto",
+          "Felicidade"
+        ]
+      }
+    ]
+  }
 ]
