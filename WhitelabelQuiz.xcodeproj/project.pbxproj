@@ -43,8 +43,6 @@
 		95F3CAA2283520A7001F30D6 /* LevelListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */; };
 		95F3CAA428352706001F30D6 /* SetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */; };
 		95F3CAA62835276F001F30D6 /* GetCurrentLevelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */; };
-		95FE61F0283977D800DE1D46 /* StoreItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE61EE283977D800DE1D46 /* StoreItemCollectionViewCell.swift */; };
-		95FE61F1283977D800DE1D46 /* StoreItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95FE61EF283977D800DE1D46 /* StoreItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +103,6 @@
 		95F3CAA0283520A7001F30D6 /* LevelListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelListViewController.xib; sourceTree = "<group>"; };
 		95F3CAA328352706001F30D6 /* SetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
 		95F3CAA52835276F001F30D6 /* GetCurrentLevelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLevelUseCase.swift; sourceTree = "<group>"; };
-		95FE61EE283977D800DE1D46 /* StoreItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		95FE61EF283977D800DE1D46 /* StoreItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,8 +304,6 @@
 		954B60A628397469006E32C3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				95FE61EE283977D800DE1D46 /* StoreItemCollectionViewCell.swift */,
-				95FE61EF283977D800DE1D46 /* StoreItemCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -451,7 +445,6 @@
 				951CF2D9283283E800895EB8 /* click.mp3 in Resources */,
 				95F3CAA2283520A7001F30D6 /* LevelListViewController.xib in Resources */,
 				5092505927A36B5A006DEDA4 /* LaunchScreen.storyboard in Resources */,
-				95FE61F1283977D800DE1D46 /* StoreItemCollectionViewCell.xib in Resources */,
 				5092505627A36B5A006DEDA4 /* Assets.xcassets in Resources */,
 				954B609F28396B70006E32C3 /* StoreViewController.xib in Resources */,
 				50A1D51C27EBF4C5007F0D95 /* MainMenuViewController.xib in Resources */,
@@ -489,7 +482,6 @@
 				50A1D51B27EBF4C5007F0D95 /* MainMenuViewController.swift in Sources */,
 				954B609928395E92006E32C3 /* AudioManager.swift in Sources */,
 				5092505427A36B57006DEDA4 /* WhitelabelQuiz.xcdatamodeld in Sources */,
-				95FE61F0283977D800DE1D46 /* StoreItemCollectionViewCell.swift in Sources */,
 				954B60A128397273006E32C3 /* StoreItem.swift in Sources */,
 				5092504A27A36B57006DEDA4 /* AppDelegate.swift in Sources */,
 				5092504C27A36B57006DEDA4 /* SceneDelegate.swift in Sources */,

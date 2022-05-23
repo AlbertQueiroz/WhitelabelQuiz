@@ -23,9 +23,18 @@ class MainMenuViewController: UIViewController {
         return UserDefaults.standard.bool(forKey: isSoundEnabledKey)
     }
     
+    private var didStartPlaying: Bool {
+        let level = GetCurrentLevelUseCase().execute()
+        return level > 1
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setAudioButtons()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setPlayButtonImage()
     }
 
     @IBAction func play(_ sender: Any) {
@@ -67,6 +76,14 @@ class MainMenuViewController: UIViewController {
     
     private func setMusicButtonImage() {
         musicButton.tintColor = isMusicEnabled ? .orange : .gray
+    }
+    
+    private func setPlayButtonImage() {
+        playButton.imageView?.contentMode = .scaleAspectFit
+        if didStartPlaying {
+            let image = UIImage(named: "continuarB")
+            playButton.setImage(image, for: .normal)
+        }
     }
     
     

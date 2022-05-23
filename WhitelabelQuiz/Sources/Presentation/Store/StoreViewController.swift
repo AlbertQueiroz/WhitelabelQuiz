@@ -8,48 +8,47 @@
 import UIKit
 
 class StoreViewController: UIViewController {
-
+    
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemPrice: UILabel!
+    
+    var currentItem = 0
+    
     private var items: [StoreItem] = [
         .init(name: "Celular", imageName: "celular", price: 400),
-        .init(name: "Celular", imageName: "celular", price: 400),
-        .init(name: "Celular", imageName: "celular", price: 400),
-        .init(name: "Celular", imageName: "celular", price: 400)
+        .init(name: "Televisão", imageName: "televisao", price: 600),
+        .init(name: "Viagem", imageName: "viagem", price: 800),
+        .init(name: "Video Game", imageName: "video-game", price: 900)
     ]
-    @IBOutlet weak var itemsCollection: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        itemsCollection.delegate = self
-        itemsCollection.dataSource = self
-        let cellNib = UINib(nibName: "StoreItemCollectionViewCell", bundle: nil)
-        itemsCollection.register(cellNib, forCellWithReuseIdentifier: "StoreItemCell")
+
         setupNavigationBar()
+        setItem()
     }
     
     @IBAction func buy(_ sender: Any) {
         SoundManager.playSound(resource: "click")
     }
     
-}
-
-extension StoreViewController: UICollectionViewDelegate {
-    
-}
-
-extension StoreViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+    @IBAction func nextItem(_ sender: Any) {
+        currentItem += currentItem == items.count - 1 ? 0 : 1
+        setItem()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = itemsCollection.dequeueReusableCell(
-            withReuseIdentifier: "StoreItemCell",
-            for: indexPath
-        ) as? StoreItemCollectionViewCell else { return UICollectionViewCell() }
-        let item = items[indexPath.row]
-        cell.setup(with: item)
-        
-        return cell
+    @IBAction func previousItem(_ sender: Any) {
+        currentItem -= currentItem == 0 ? 0 : 1
+        setItem()
     }
+    
+    
+    private func setItem() {
+        let item = items[currentItem]
+        itemName.text = item.name
+        itemImage.image = UIImage(named: item.imageName)
+        itemPrice.text = "\(item.price)"
+    }
+    
 }

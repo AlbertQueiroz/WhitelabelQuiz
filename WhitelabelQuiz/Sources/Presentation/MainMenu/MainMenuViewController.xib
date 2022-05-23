@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController" customModule="WhitelabelQuiz" customModuleProvider="target">
             <connections>
                 <outlet property="musicButton" destination="9hw-Fv-DnM" id="5El-yM-bvD"/>
+                <outlet property="playButton" destination="2Zl-Ct-jpV" id="olD-aY-klC"/>
                 <outlet property="soundButton" destination="RDx-gF-wAa" id="hVg-vH-QP5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,12 +35,10 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aBF-zQ-rMQ">
                     <rect key="frame" x="12.5" y="423.5" width="389" height="374.5"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zl-Ct-jpV">
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zl-Ct-jpV">
                             <rect key="frame" x="0.0" y="0.0" width="389" height="108.5"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title=" ">
-                                <backgroundConfiguration key="background" image="novo-jogoB" imageContentMode="scaleAspectFit"/>
-                            </buttonConfiguration>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" " image="novo-jogoB"/>
                             <connections>
                                 <action selector="play:" destination="-1" eventType="touchUpInside" id="PHH-Lk-rgh"/>
                             </connections>
@@ -122,7 +121,7 @@
         <image name="lojaB" width="1024" height="370"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="novo-jogoB" width="1024" height="370"/>
-        <image name="nuvem" width="1745" height="1153"/>
+        <image name="nuvem" width="128" height="128"/>
         <image name="sobre" width="1024" height="370"/>
         <image name="valendo" width="720" height="1280"/>
         <image name="volume.2.fill" catalog="system" width="128" height="90"/>

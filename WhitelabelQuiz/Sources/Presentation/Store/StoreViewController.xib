@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreViewController" customModule="WhitelabelQuiz" customModuleProvider="target">
             <connections>
-                <outlet property="itemsCollection" destination="MAr-a2-Fje" id="9Lu-nD-DxQ"/>
+                <outlet property="itemImage" destination="WlS-p3-ffx" id="qcA-LH-BsQ"/>
+                <outlet property="itemName" destination="dAe-hu-E9t" id="xsv-Cp-F4K"/>
+                <outlet property="itemPrice" destination="ItI-VG-Nyi" id="Uia-nA-Jay"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,35 +40,92 @@
                         <action selector="buy:" destination="-1" eventType="touchUpInside" id="nqL-qz-LP6"/>
                     </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MAr-a2-Fje">
-                    <rect key="frame" x="26" y="397" width="362" height="192"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MQG-2k-T77">
+                    <rect key="frame" x="155.5" y="414" width="103.5" height="157.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[item-name]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-hu-E9t">
+                            <rect key="frame" x="1.5" y="0.0" width="100" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WlS-p3-ffx">
+                            <rect key="frame" x="5.5" y="32.5" width="92" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="92" id="Nbq-uP-Sc1"/>
+                                <constraint firstAttribute="height" constant="92" id="guY-aX-we2"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="89c-kc-FTW">
+                            <rect key="frame" x="0.0" y="136.5" width="103.5" height="21"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda1" translatesAutoresizingMaskIntoConstraints="NO" id="yDW-JC-jEP">
+                                    <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="C5s-HN-gh3"/>
+                                        <constraint firstAttribute="width" constant="21" id="lCy-k4-kcQ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[price]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItI-VG-Nyi">
+                                    <rect key="frame" x="25" y="0.0" width="53.5" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda3" translatesAutoresizingMaskIntoConstraints="NO" id="aGw-94-4IQ">
+                                    <rect key="frame" x="82.5" y="0.0" width="21" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="21" id="HiO-mO-DTa"/>
+                                        <constraint firstAttribute="height" constant="21" id="kly-4T-yF3"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-pt-W0K">
+                    <rect key="frame" x="338" y="448" width="42" height="42"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="192" id="axf-FY-v9u"/>
+                        <constraint firstAttribute="width" secondItem="hIc-pt-W0K" secondAttribute="height" multiplier="1:1" id="0eD-Ue-nW6"/>
+                        <constraint firstAttribute="height" constant="42" id="XRh-YS-Acq"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zHS-E9-med">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="proxB"/>
+                    <connections>
+                        <action selector="nextItem:" destination="-1" eventType="touchUpInside" id="evj-td-je1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pei-LT-aaX">
+                    <rect key="frame" x="32" y="448" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Pei-LT-aaX" secondAttribute="height" multiplier="1:1" id="EBV-7M-P6K"/>
+                        <constraint firstAttribute="height" constant="42" id="K10-pe-Rjk"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="anterB"/>
+                    <connections>
+                        <action selector="previousItem:" destination="-1" eventType="touchUpInside" id="NOD-RJ-h1w"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Bc6-ta-H9P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0AV-MK-hL3"/>
-                <constraint firstItem="MAr-a2-Fje" firstAttribute="centerY" secondItem="Bc6-ta-H9P" secondAttribute="centerY" multiplier="1.1" id="4uZ-k5-Ipr"/>
+                <constraint firstItem="Pei-LT-aaX" firstAttribute="top" secondItem="Bc6-ta-H9P" secondAttribute="centerY" id="3Hc-P4-Nfa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hIc-pt-W0K" secondAttribute="trailing" constant="34" id="7XV-fr-FzY"/>
                 <constraint firstAttribute="bottom" secondItem="Bc6-ta-H9P" secondAttribute="bottom" id="J6U-YE-nMD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pEm-kk-wcv" secondAttribute="bottom" constant="64" id="JbK-Eb-1Hg"/>
-                <constraint firstItem="MAr-a2-Fje" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="QnQ-E2-xmb"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MAr-a2-Fje" secondAttribute="trailing" constant="26" id="SxU-Te-UBI"/>
+                <constraint firstItem="hIc-pt-W0K" firstAttribute="top" secondItem="Bc6-ta-H9P" secondAttribute="centerY" id="TVt-4I-0A1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EVP-S3-tmI" secondAttribute="trailing" constant="92" id="WHX-JV-AME"/>
                 <constraint firstItem="pEm-kk-wcv" firstAttribute="trailing" secondItem="EVP-S3-tmI" secondAttribute="trailing" id="bDV-7I-JAY"/>
+                <constraint firstItem="Pei-LT-aaX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dXY-YT-uDC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bc6-ta-H9P" secondAttribute="trailing" id="fjq-bX-vgu"/>
                 <constraint firstItem="pEm-kk-wcv" firstAttribute="leading" secondItem="EVP-S3-tmI" secondAttribute="leading" id="kkA-DM-r1e"/>
                 <constraint firstItem="EVP-S3-tmI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="92" id="qXw-Pb-kml"/>
+                <constraint firstItem="MQG-2k-T77" firstAttribute="centerY" secondItem="Bc6-ta-H9P" secondAttribute="centerY" multiplier="1.1" id="rgN-ew-try"/>
                 <constraint firstItem="EVP-S3-tmI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tZi-2X-XvQ"/>
+                <constraint firstItem="MQG-2k-T77" firstAttribute="centerX" secondItem="Bc6-ta-H9P" secondAttribute="centerX" id="ulW-5C-zZt"/>
                 <constraint firstItem="pEm-kk-wcv" firstAttribute="height" secondItem="EVP-S3-tmI" secondAttribute="height" id="zEy-MG-I8i"/>
                 <constraint firstItem="Bc6-ta-H9P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zhp-wY-wyD"/>
             </constraints>
@@ -74,9 +133,13 @@
         </view>
     </objects>
     <resources>
+        <image name="anterB" width="768" height="768"/>
         <image name="comprarB" width="1024" height="370"/>
         <image name="fundo loja" width="720" height="1280"/>
         <image name="iconBanco" width="1024" height="370"/>
+        <image name="moeda1" width="768" height="768"/>
+        <image name="moeda3" width="768" height="768"/>
+        <image name="proxB" width="768" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
