@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController" customModule="WhitelabelQuiz" customModuleProvider="target">
             <connections>
-                <outlet property="playButton" destination="2Zl-Ct-jpV" id="o2b-Z0-4lw"/>
+                <outlet property="musicButton" destination="9hw-Fv-DnM" id="5El-yM-bvD"/>
+                <outlet property="playButton" destination="2Zl-Ct-jpV" id="olD-aY-klC"/>
+                <outlet property="soundButton" destination="RDx-gF-wAa" id="hVg-vH-QP5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,63 +26,72 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Tca-NT-7Pg">
-                    <rect key="frame" x="25" y="80" width="364" height="332"/>
+                    <rect key="frame" x="12.5" y="32" width="389" height="355.5"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Sti-fh-Cwb"/>
                         <constraint firstAttribute="width" secondItem="Tca-NT-7Pg" secondAttribute="height" multiplier="241:220" id="pzK-Zg-by2"/>
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aBF-zQ-rMQ">
-                    <rect key="frame" x="25" y="448" width="364" height="350"/>
+                    <rect key="frame" x="12.5" y="423.5" width="389" height="374.5"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zl-Ct-jpV">
-                            <rect key="frame" x="0.0" y="0.0" width="364" height="100.5"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title=" ">
-                                <backgroundConfiguration key="background" image="novo-jogoB" imageContentMode="scaleAspectFit"/>
-                            </buttonConfiguration>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zl-Ct-jpV">
+                            <rect key="frame" x="0.0" y="0.0" width="389" height="108.5"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" " image="novo-jogoB"/>
                             <connections>
                                 <action selector="play:" destination="-1" eventType="touchUpInside" id="PHH-Lk-rgh"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfJ-t6-B9t">
-                            <rect key="frame" x="0.0" y="124.5" width="364" height="101"/>
+                            <rect key="frame" x="0.0" y="132.5" width="389" height="109"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title=" ">
                                 <backgroundConfiguration key="background" image="lojaB" imageContentMode="scaleAspectFit"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="store:" destination="-1" eventType="touchUpInside" id="Agt-gV-FtG"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-vt-lRH">
-                            <rect key="frame" x="0.0" y="249.5" width="364" height="100.5"/>
+                            <rect key="frame" x="0.0" y="265.5" width="389" height="109"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title=" ">
                                 <backgroundConfiguration key="background" image="sobre" imageContentMode="scaleAspectFit"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="about:" destination="-1" eventType="touchUpInside" id="BOo-Ti-aME"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-Hy-TKA">
-                    <rect key="frame" x="326" y="44" width="72" height="36"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-Hy-TKA">
+                    <rect key="frame" x="295" y="34" width="103" height="46"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hw-Fv-DnM">
-                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="36" id="SLH-zi-7A0"/>
-                                <constraint firstAttribute="width" constant="36" id="q4P-K3-iZp"/>
+                                <constraint firstAttribute="width" constant="46" id="q4P-K3-iZp"/>
+                                <constraint firstAttribute="width" secondItem="9hw-Fv-DnM" secondAttribute="height" multiplier="1:1" id="vnI-NQ-aJJ"/>
                             </constraints>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="music.note" catalog="system"/>
+                            <state key="normal" image="music.note" catalog="system" backgroundImage="nuvem"/>
+                            <connections>
+                                <action selector="musicAction:" destination="-1" eventType="touchUpInside" id="hCk-Zu-Sze"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-gF-wAa">
-                            <rect key="frame" x="36" y="0.0" width="36" height="36"/>
+                            <rect key="frame" x="57" y="0.0" width="46" height="46"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="36" id="Mqi-rY-y6F"/>
-                                <constraint firstAttribute="height" constant="36" id="NEn-kt-WkD"/>
+                                <constraint firstAttribute="width" constant="46" id="Mqi-rY-y6F"/>
                             </constraints>
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" image="volume.2.fill" catalog="system"/>
+                            <state key="normal" image="volume.2.fill" catalog="system" backgroundImage="nuvem"/>
+                            <connections>
+                                <action selector="soundAction:" destination="-1" eventType="touchUpInside" id="E2P-bx-lek"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -94,13 +105,13 @@
                 <constraint firstItem="aBF-zQ-rMQ" firstAttribute="height" secondItem="Tca-NT-7Pg" secondAttribute="height" multiplier="1.05479" id="HH4-3R-dZu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="giW-vI-664" secondAttribute="trailing" id="Jv0-LL-kN2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aBF-zQ-rMQ" secondAttribute="bottom" constant="64" id="PYa-H6-65l"/>
-                <constraint firstItem="6o6-Hy-TKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PqT-Ou-Buh"/>
+                <constraint firstItem="6o6-Hy-TKA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-10" id="PqT-Ou-Buh"/>
                 <constraint firstItem="aBF-zQ-rMQ" firstAttribute="top" secondItem="Tca-NT-7Pg" secondAttribute="bottom" constant="36" id="Yfr-J8-B71"/>
-                <constraint firstItem="Tca-NT-7Pg" firstAttribute="top" secondItem="6o6-Hy-TKA" secondAttribute="bottom" id="aNw-Zh-TFU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6o6-Hy-TKA" secondAttribute="trailing" constant="16" id="aSh-EU-sto"/>
                 <constraint firstItem="aBF-zQ-rMQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dX3-2l-AZF"/>
                 <constraint firstItem="aBF-zQ-rMQ" firstAttribute="width" secondItem="Tca-NT-7Pg" secondAttribute="width" id="h5d-cN-T3l"/>
                 <constraint firstAttribute="bottom" secondItem="giW-vI-664" secondAttribute="bottom" id="jYD-5a-9t1"/>
+                <constraint firstItem="Tca-NT-7Pg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="v0f-fp-5xG"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </view>
@@ -110,6 +121,7 @@
         <image name="lojaB" width="1024" height="370"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="novo-jogoB" width="1024" height="370"/>
+        <image name="nuvem" width="128" height="128"/>
         <image name="sobre" width="1024" height="370"/>
         <image name="valendo" width="720" height="1280"/>
         <image name="volume.2.fill" catalog="system" width="128" height="90"/>

@@ -20,7 +20,8 @@ final class LevelsService {
             from: remoteJsonData
         ) else { return getLocalLevels() }
         
-        return levels
+//        return levels
+        return getLocalLevels()
     }
     
     func getLocalLevels() -> [Level] {
